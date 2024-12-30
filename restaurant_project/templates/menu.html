@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body>
+    
+
+    <style>
+        .yazi{
+        display: flex;
+        justify-content: center;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 18px;
+        color: black;
+        margin: 20px;
+            
+        }
+
+        .yazi-1{
+        display: flex;
+        justify-content: center;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 70px;
+        color: black;
+        padding: 0px;
+        margin: -100px;
+        }
+
+        .slideshow-container {
+            position: relative;
+            width: 100%; /* Kapsayıcı genişliği ekranın %90'ı */
+            height: 60vh; /* Ekranın %50'si kadar yükseklik */
+            overflow: hidden;
+            margin: 50px auto;
+          }
+          
+          .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%; /* Kapsayıcıya tam oturacak */
+            top: 0;
+            left: 0;
+            opacity: 0;
+            animation: slideshow 9s infinite;
+          }
+          
+          .slide img {
+            width: 100%;
+            height: 100%; /* Resmi kapsayıcıya tam oturt */
+            object-fit: cover; /* Görüntüyü kırpmadan orantılı olarak doldur */
+            padding: 0 10px; /* Sağdan ve soldan 10px boşluk */
+            box-sizing: border-box; /* Padding genişliği etkilemesin */
+          }
+          
+          .slide:nth-child(1) {
+            animation-delay: 0s;
+          }
+          
+          .slide:nth-child(2) {
+            animation-delay: 3s;
+          }
+          
+          .slide:nth-child(3) {
+            animation-delay: 6s;
+          }
+          
+          @keyframes slideshow {
+            0% {
+              opacity: 0;
+            }
+            20% {
+              opacity: 1;
+            }
+            40% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 0;
+        }
+    }
+
+    .yazimiz{
+        
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color:black;
+        
+    }
+
+    .yazi-2{
+        
+        text-align: left;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        padding-left: 90px;
+        color:black;
+        
+    }
+
+    .yazi-3{
+        position: absolute;
+        top:95%;
+        margin: 0;
+        right: 10%;
+        transform: translateY(0);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        color:black;
+        
+    }
+
+    .yazi-4{
+       position: relative;
+       text-align: center;
+       right: 30%;
+       font-size: 50px;
+       top: 23px;
+       font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .yazi-5{
+        position: relative;
+        text-align: center;
+        right: 20%;
+        font-size: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .picture{
+        position: absolute;
+        right: 10%;
+        height: 30vh;
+        width: 300px;
+        overflow: hidden;
+        top: 130%;
+        
+    }
+
+    .picture img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .special-recipe{
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 50px;
+    }
+
+    .yazi-6{
+        position: relative;
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        top: -95px;
+        font-size: 20px;
+    }
+
+    .blog-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        margin-top: -80px;
+        flex-wrap: wrap;
+    }
+
+    .blog-row {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .blog-item {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        max-width: 300px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease;
+    }
+
+    .blog-item:hover {
+        transform: translateY(-5px);
+    }
+
+    .blog-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .blog-text {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .blog-text h3 {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .blog-text p {
+        font-size: 14px;
+        color: #555;
+    }
+
+    .blog-text strong {
+        font-size: 14px;
+        color: #000;
+        
+    }
+
+    .footer{
+        background-color:#555;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        height: 5vh;
+        width: 100%;
+    }
+
+    .footer a{
+        color: bisque;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+    .footer a:hover{
+        text-decoration: underline;
+    }
+
+    </style>
+
+    <div class="yazi">
+        <p>Tasty And Crunchy</p>
+        
+    </div>
+    <div class="yazi-1">
+        <p>Our Menu</p>
+    </div>
+
+    <div class="slideshow-container">
+        <div class="slide">
+          <img src="https://iso.500px.com/wp-content/uploads/2015/12/food_cover.jpg" alt="Image 1">
+        </div>
+        <div class="slide">
+          <img src="https://media.cnn.com/api/v1/images/stellar/prod/170206165040-dubai-michelin-dining-boca.jpg?q=w_2700,h_1800,x_0,y_0,c_fill" alt="Image 2">
+        </div>
+        <div class="slide">
+          <img src="https://cdn.prod.website-files.com/56f03b1536442f6b27f0f08c/5f03324cbb2506842953d137_worlds-best-foods-pizza.jpg" alt="Image 3">
+        </div>
+        <div class="slide">
+            <img src="https://cdn.vox-cdn.com/thumbor/bYLgaVCYWrlFFESv43hvmQK3jTk=/0x0:3857x4014/1200x900/filters:focal(1621x1699:2237x2315)/cdn.vox-cdn.com/uploads/chorus_image/image/55663605/R0009491.202.jpg" alt="Image 3">
+          </div>
+          <div class="slide">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/del059924-picanhasteak-024-bjg-index-664d1411c61e0.jpg" alt="Image 3">
+          </div>
+      </div>
+
+      <div class="yazimiz">
+        <p>Today's Menu </p>
+        
+      </div>
+
+     
+      <div class="yazi-2">
+        Bison Burger _____________________________________ $ 23.00 <br>
+   
+         <br>
+
+         Sword Fight _____________________________________ $ 21.00 <br>
+         
+
+         <br>
+
+         Fish & Chips _____________________________________ $ 12.99 <br>
+        
+
+         <br>
+         Chicken 'n Waffles _________________________________ $ 15.00 <br>
+      
+         <br>
+
+
+        
+      </div>
+      
+
+      <div class="yazi-3">
+        Bangers and Mash ___________________________________ $ 25.00 <br>
+      
+        <br>
+        Chopped Wedge Salad ________________________________ $ 18.00 <br>
+      
+        <br>
+        Roast Chicken _______________________________________ $ 12.00<br>
+
+        <br>
+        Grilled Fish ________________________________________ $ 35.00 <br>
+
+
+      </div>
+        </div>
+      </div>
+
+      <div class="yazi-4">
+        <p>Today’s Best Offer</p>
+      </div>
+      <div class="yazi-5">
+        At Arial's Restaurant, we believe in providing exceptional value alongside delicious meals.<br>
+        Today's Best Offer features a special dish prepared by our talented Chef Samet Yilmaz, crafted with the <br>
+        finest seasonal ingredients at an unbeatable price.
+      </div>
+
+
+      <div class="picture">
+        <img src="https://savory.qodeinteractive.com/wp-content/uploads/2016/09/home1-main-tab-image1.jpg" alt="pic"/>
+
+      </div>
+
+      <div class="special-recipe">
+        <P>Special Recipes</P> <br>
+        
+       
+      </div>
+
+      <div class="yazi-6">
+        <p>At Arial's Restaurant, we are proud to share our passion for cooking through our Special Recipes.<br>
+          These exclusive dishes are carefully crafted by Chef Samet Yilmaz, using unique combinations of fresh ingredients and innovative cooking techniques.
+
+
+        </p>
+      </div>
+
+
+      <div class="blog-container">
+        <div class="blog-item">
+            <img src="https://static.spotapps.co/spots/7a/f066fa931040699ddd4e7d27601ca0/medium" alt="Sugar" class="blog-image">
+            <div class="blog-text">
+                
+                <h3>Bavarian Pretzel</h3>
+                <p>Bavarian Style hand twisted pretzel topped with salt and served with side of house made warm beer cheese.</p>
+                
+            </div>
+        </div>
+
+        <div class="blog-item">
+            <img src="https://static.spotapps.co/spots/60/240014f7dc499b9f06b43cda3f6a6c/medium" alt="San Francisco" class="blog-image">
+            <div class="blog-text">
+                
+                <h3>Chicken Wings</h3>
+                <p>Choice of four or eight chicken wings served crispy and naked with side of buffalo sauce and choices of ranch, blue cheese and honey mustard.</p>
+                
+            </div>
+        </div>
+
+        <div class="blog-item">
+            <img src="https://static.spotapps.co/spots/3f/be5f8446b946119c5c44dbc721fcf3/medium" alt="San Francisco" class="blog-image">
+            <div class="blog-text">
+                
+                <h3>Spicy Chicken Sando.</h3>
+               
+                
+                
+            </div>
+        </div>
+
+        <div class="blog-item">
+            <img src="https://static.spotapps.co/spots/88/01d9c4f25546718e9869ee7034b71c/medium" alt="San Francisco" class="blog-image">
+            <div class="blog-text">
+                
+                <h3>French Fries</h3>
+                <p>Crispy and salted French fries, 'nuff said.</p><br>
+                
+                
+            </div>
+        </div>
+
+
+        <div class="blog-item">
+            <img src="https://static.spotapps.co/spots/2a/13ebd7104e4e32834a4ce571149cfc/medium" alt="San Francisco" class="blog-image">
+            <div class="blog-text">
+                
+                <h3>Steak Sandwich</h3>
+                <p>Sliced Top Sirloin, Grilled Onion, house-made Chimichurri, zesty Aioli served on fresh Garlic Toast served with side of Steak Fries or Onion Rings.</p><br>
+                
+                
+            </div>
+        </div>
+
+       <footer class="footer">
+        <p>&copy; 2024 <br>
+            All rights reserved. | <a href="#privacy">Security</a> | <a href="#terms">Conditions</a>
+    
+        </p>
+
+       </footer>
+</body>
+</html>
